@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 - La Leyenda del Real Madrid</title>
+    <style>
+        /* Importando una fuente chida de Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        /* Diseño base */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000080 0%, #FFD700 50%, #FFFFFF 100%);
+            background-attachment: fixed;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        /* Encabezado con los colores azul rey, dorados y blancos */
+        header {
+            background: linear-gradient(45deg, #000080, #FFD700);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            border-bottom: 5px solid #FFFFFF;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: animateTitle 2s ease-in-out;
+        }
+
+        @keyframes animateTitle {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px) scale(0.9);
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateY(-15px) scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #FFD700;
+            margin-top: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Navbar simple */
+        nav {
+            background-color: #000080;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Sección de contenido */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            border: 2px solid #FFD700;
+            transition: transform 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #000080;
+            border-left: 4px solid #FFD700;
+            padding-left: 10px;
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        /* Imágenes */
+        .imagen-destacada {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 1rem 0;
+            border: 3px solid #000080;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(45deg, #000080, #FFD700);
+            color: white;
+            font-size: 0.9rem;
+            border-top: 5px solid #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cristiano Ronaldo</h1>
+        <p>El máximo goleador histórico del Real Madrid</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#fichaje">Fichaje</a>
+        <a href="#records">Récords</a>
+        <a href="#legado">Legado</a>
+        <a href="#estadisticas">Estadísticas</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#galeria">Galería</a>
+    </nav>
+
+    <div class="container" id="inicio">
+        
+        <div class="section" id="fichaje">
+            <h2>El Fichaje del Siglo</h2>
+            <p>En el verano de 2009, el Real Madrid presentó a Cristiano Ronaldo en un Estadio Santiago Bernabéu abarrotado. Desde ese momento, comenzaría una de las épocas más doradas en la historia del club blanco.</p>
+            <img src="/presentacioncr7.webp" alt="Presentación de CR7" class="imagen-destacada">
+        </div>
+
+        <div class="section" id="records">
+            <h2>Récords Imposibles</h2>
+            <p>Durante sus 9 temporadas en Madrid, El Bicho destrozó todas las estadísticas. Anotó la brutalidad de 450 goles en 438 partidos, promediando más de un gol por encuentro. Con él, el Madrid conquistó 4 UEFA Champions League, 3 de ellas de manera consecutiva.</p>
+            <img src="/championscr7.webp" alt="CR7 celebrando la Champions" class="imagen-destacada">
+        </div>
+
+        <div class="section" id="estadisticas">
+            <h2>Estadísticas con el Real Madrid</h2>
+            <ul>
+                <li><strong>Goles totales:</strong> 450 en 438 partidos</li>
+                <li><strong>Asistencias:</strong> 101</li>
+                <li><strong>Títulos ganados:</strong> 4 Champions League, 2 Ligas, 2 Copas del Rey, 3 Supercopas de Europa, 2 Mundiales de Clubes</li>
+                <li><strong>Goles en una temporada:</strong> 61 (2014-2015)</li>
+                <li><strong>Hat-tricks:</strong> 34</li>
+            </ul>
+        </div>
+
+        <div class="section" id="curiosidades">
+            <h2>Datos Curiosos</h2>
+        
+            <p>Ha marcado goles en 11 temporadas consecutivas en la Champions League, un récord absoluto.</p>
+            <p>En 2018, se convirtió en el primer jugador en alcanzar los 100 millones de seguidores en Instagram.</p>
+            <p>Su celebración "Siiiuuu" se ha convertido en un ícono global, imitado por fans en todo el mundo.</p>
+        </div>
+
+        <div class="section" id="galeria">
+            <h2>Galería de Momentos</h2>
+            <p>Aquí algunos momentos icónicos de CR7 con el Real Madrid:</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                <img src="/chilena.webp" alt="La mitica chilena de CR7 a la juventus en 2018" style="width: 30%; margin: 10px; border-radius: 10px;">
+                <img src="/balondeoro.webp" alt="Celebrando su 5to balon de oro" style="width: 30%; margin: 10px; border-radius: 10px;">
+                <img src="/siu.webp" alt="La venganza" style="width: 30%; margin: 10px; border-radius: 10px;" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+    <footer>
+        <p>Página creada para recordar al Bicho | Desarrollado por Leandro</p>
+        
+    </footer>
+
+</body>
+</html>
